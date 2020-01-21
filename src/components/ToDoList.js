@@ -5,9 +5,7 @@ import ToDo from './ToDo';
 
 const ToDoList = (props) => {
     const [state, dispatch] = useReducer(todoReducer, initialState);
-    const [newToDo, setNewToDo] = useState('');
     console.log(state);
-    
 
     return (
         <div className='todoList'>
