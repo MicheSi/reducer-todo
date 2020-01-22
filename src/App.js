@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Reducer To Do</h1>
+      <h1>Things to Do</h1>
       <ToDoForm addNewToDo={addNewToDo}/>
       <ToDoList state={state} toggleCompleted={toggleCompleted} dispatch={dispatch} clearCompleted={clearCompleted}/>
     </div>

@@ -25,7 +25,7 @@ const ToDoForm = (props) => {
              value={newToDo}
              onChange={handleChanges}
              />
-             <button type='submit'>Add To Do</button>
+             <button className='addBtn' type='submit'>Add To Do</button>
         </form>
     )
 }
