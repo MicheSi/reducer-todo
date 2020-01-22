@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+
+html, body {
+  box-sizing: border-box;
+  font-family: 'Kalam', cursive;
+}
+
+html {
+  background-image: url('./planner.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.App {
+  margin-left: 25%;
+  text-align: center;
+}
+
+.todocompleted {
+  text-decoration: line-through;
+  font-size: 20px;
+  color: lightgray;
+}
+
+.todo {
+  font-size: 24px;
+}
+
+form {
+  margin-top: 3%;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 200px;
+}
+
+button {
+  border: 1px dashed darkslategray;
+  border-radius: 15px;
+  background-color: lightgray;
+  color: darkslategray;
+  height: 30px;
+}
+
+.addBtn {
+  margin-left: 10px;
+}
+
+.todoList {
+  margin: 3% 0 5%;
+}
+
+.clearBtn {
+  margin-top: 4%;
+}
