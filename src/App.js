@@ -12,11 +12,19 @@ function App() {
     dispatch({type: 'ADD_TODO', payload: todo})
   }
 
+  const toggleCompleted = todoId => {
+    dispatch({type: 'TOGGLE_COMPLETED', payload: todoId})
+  }
+
+  const clearCompleted = todoCompleted => {
+    dispatch({type: 'CLEAR_COMPLETED', payload: todoCompleted})
+  }
+
   return (
     <div className="App">
       <h1>Reducer To Do</h1>
       <ToDoForm addNewToDo={addNewToDo}/>
-      <ToDoList state={state}/>
+      <ToDoList state={state} toggleCompleted={toggleCompleted} dispatch={dispatch}/>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React, {useState, useReducer} from 'react';
 import { todoReducer, initialState } from '../reducers/reducer';
 
 const ToDoForm = (props) => {
-    const [state, dispatch] = useReducer(todoReducer, initialState);
+    // const [state, dispatch] = useReducer(todoReducer, initialState);
     const [newToDo, setNewToDo] = useState('');
 
     const handleChanges = e => {
@@ -12,6 +12,7 @@ const ToDoForm = (props) => {
     const handleSubmit = e => {
         e.preventDefault();
         props.addNewToDo(newToDo);
+        setNewToDo('');
     }
 
     return (
@@ -24,7 +25,7 @@ const ToDoForm = (props) => {
              value={newToDo}
              onChange={handleChanges}
              />
-             <button onClick={() => dispatch({type: 'ADD_TODO', payload: newToDo})}>Add To Do</button>
+             <button type='submit'>Add To Do</button>
         </form>
     )
 }

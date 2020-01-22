@@ -4,18 +4,20 @@ import { todoReducer, initialState } from '../reducers/reducer';
 import ToDo from './ToDo';
 
 const ToDoList = (props) => {
-    const [state, dispatch] = useReducer(todoReducer, initialState);
-    console.log(state);
 
     return (
         <div className='todoList'>
-            {props.state.map(todo => (
+            {props.state.todos.map(todo => (
                 <ToDo
                   key={todo.id}
+                  id={todo.id}
                   todo={todo.item}
                   completed={todo.completed}
+                  dispatch={props.dispatch}
+                //   toggleCompleted={props.toggleCompleted}
                   />
             ))}
+            <button onClick={props.clearCompleted}>Clear Completed Tasks</button>
         </div>
     )
 }
