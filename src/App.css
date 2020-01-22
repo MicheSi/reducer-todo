@@ -26,6 +26,10 @@ html {
   font-size: 24px;
 }
 
+form {
+  margin-top: 3%;
+}
+
 input {
   border: none;
   border-bottom: 1px solid gray;
@@ -42,4 +46,12 @@ button {
 
 .addBtn {
   margin-left: 10px;
+}
+
+.todoList {
+  margin: 3% 0 5%;
+}
+
+.clearBtn {
+  margin-top: 4%;
 }
