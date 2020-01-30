@@ -9,7 +9,6 @@ html {
   background-image: url('./planner.jpg');
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .App {
@@ -59,6 +58,9 @@ button {
 }
 
 @media (max-width: 500px) {
+  html {
+    background-size: length;
+  }
   .App {
     margin: 0;
   }
