@@ -55,3 +55,9 @@ button {
 .clearBtn {
   margin-top: 4%;
 }
+
+@media (max-width: 500px) {
+  .App {
+    margin: 0;
+  }
+}
