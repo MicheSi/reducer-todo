@@ -14,6 +14,7 @@ html {
 .App {
   margin-left: 25%;
   text-align: center;
+  color: steelblue;
 }
 
 .todocompleted {
@@ -59,5 +60,12 @@ button {
 @media (max-width: 500px) {
   .App {
     margin: 0;
+  }
+  .todo p {
+    margin: 1%;
+  }
+  .todocompleted p {
+    margin: 1%;
+    color: darkgray;
   }
 }
