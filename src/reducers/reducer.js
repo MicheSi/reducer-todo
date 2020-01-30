@@ -1,11 +1,12 @@
 import React, {useReducer} from 'react';
 
 export const initialState = {
-    todos: [{
-        item: 'Learn about reducers',
-        completed: false,
-        id: 1
-    }
+    todos: [
+        {
+            item: '',
+            completed: false,
+            id: Date.now()
+        }
     ]
         
 }
